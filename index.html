@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Power-Pomodoro</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="src/icons/pomoclock.svg" alt="Icon clock">
+            <p>- <strong>P</strong>ower<strong>P</strong>omodoro...</p>
+        </div>
+        <div class="options">
+            <button class="add_new_activite">
+                <img src="src/icons/add.svg" alt="Add new item">
+                Nova atividade
+            </button>
+            <div class="config">
+                <img src="src/icons/gear.svg" alt="Show config modal">
+                <img src="src/icons/arrow-drop-down.svg" alt="Arrow drop down">
+            </div>
+            <div class="user">
+                <img src="src/icons/user-circle.svg" alt="Show config modal">
+                <img src="src/icons/arrow-drop-down.svg" alt="Arrow drop down">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="timer">
+            <div class="activite_type">
+                <label>Atividade</label>
+                <select>
+                    <option value="1">Projeto Power-Pomodoro</option>
+                    <option value="2">teste</option>
+                </select>
+            </div>
+            <div class="clock">
+                <div class="digits">
+                    <div class="digit">0</div>
+                    <div class="digit">1</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="digits">
+                    <div class="digit">0</div>
+                    <div class="digit">1</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="digits">
+                    <div class="digit">0</div>
+                    <div class="digit">1</div>
+                </div>
+                <div class="play_pause">
+                    <img src="src/icons/play.svg" alt="Button play">
+                </div>
+            </div>
+        </section>
+        <section class="list_principal_activities">
+            <div class="title">
+                <p>Atividades principais</p>
+                <img src="src/icons/eye-off.svg" alt="Hide list principal activities">
+            </div>
+            <div class="list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição da atividade</th>
+                            <th>Média diaria</th>
+                            <th>Meta diaria</th>
+                            <th>Falta para meta</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Projeto Power-Pomodoro</td>
+                            <td>05:35h</td>
+                            <td>05:35h</td>
+                            <td>05:35h</td>
+                            <td><img src="src/icons/play-small.svg" alt="Start this activite"></td>
+                        </tr>
+                        <tr>
+                            <td>Projeto Power-Pomodoro</td>
+                            <td>05:35h</td>
+                            <td>05:35h</td>
+                            <td>05:35h</td>
+                            <td><img src="src/icons/play-small.svg" alt="Start this activite"></td>
+                        </tr>
+                        <tr>
+                            <td>Projeto Power-Pomodoro</td>
+                            <td>05:35h</td>
+                            <td>05:35h</td>
+                            <td>05:35h</td>
+                            <td><img src="src/icons/play-small.svg" alt="Start this activite"></td>
+                        </tr>
+                        <tr>
+                            <td>Projeto Power-Pomodoro</td>
+                            <td>05:35h</td>
+                            <td>05:35h</td>
+                            <td>05:35h</td>
+                            <td><img src="src/icons/play-small.svg" alt="Start this activite"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="src/icons/pomoclock.svg" alt="Icon clock">
+            <p>Power-Pomodoro...</p>
+            <div class="separator"></div>
+            <p>Desenvolvido por <a href="https://github.com/jonathancruzfort">Jonathan Cruz</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
