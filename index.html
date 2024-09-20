@@ -9,6 +9,12 @@
     <link rel="manifest" href="./manifest.json" >
 
     <title>powerful-pomodoro</title>
+
+    <script>
+        if(typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('pwabuider-sw.js')
+        }
+    </script>
 </head>
 <body>
     <div class="container">
