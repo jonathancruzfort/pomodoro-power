@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "jonathancruzfort.github",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "jonathancruzfort.github",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "src/icons/pomoclock.svg",
+      "type": "image/x-icon"
+    }
+  ],
+  "id": "pomodoro-power",
+  "description": "Um simples pomodoro, com tipos de atividades"
+}
