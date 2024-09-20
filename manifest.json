@@ -10,8 +10,8 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "src/icons/pomoclock.svg",
-      "type": "image/x-icon"
+      "src": "src/icons/android-launchericon-512-512.png",
+      "sizes": "512x512"
     }
   ],
   "id": "pomodoro-power",
