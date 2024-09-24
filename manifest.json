@@ -6,7 +6,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "jonathancruzfort.github",
-  "start_url": "/",
+  "start_url": "/pomodoro-power/index.html",
   "theme_color": "#ffffff",
   "icons": [
     {
