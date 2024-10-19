@@ -37,6 +37,10 @@ h1 {
     padding-block: 14px;
 }
 
+iframe {
+    opacity: .8;
+}
+
 .container {
     display: flex;
     flex-direction: column;

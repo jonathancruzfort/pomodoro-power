@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="pq-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="src/icons/pomoclock.svg" type="image/x-icon">
-    <link rel="manifest" href="./manifest.json" >
+    <link rel="manifest" href="./manifest.json">
 
     <title>powerful-pomodoro</title>
 
     <script>
-        if(typeof navigator.serviceWorker !== 'undefined') {
+        if (typeof navigator.serviceWorker !== 'undefined') {
             navigator.serviceWorker.register('pwabuider-sw.js')
         }
     </script>
 </head>
+
 <body>
+    
     <div class="container">
         <select data-js="type"></select>
         <button data-js="play">Play</button>
         <h1 data-js="display">00:00:00</h1>
+        <iframe width="560" height="315" data-iframe="https://www.youtube.com/embed/oXcce4M_VmY?si=ZQCIvo9tKZWYfVwA"
+        src="https://www.youtube.com/embed/oXcce4M_VmY?si=ZQCIvo9tKZWYfVwA?autoplay=1" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
     </div>
 </body>
 
 <script type="module" src="./js/index.js"></script>
+
 </html>
