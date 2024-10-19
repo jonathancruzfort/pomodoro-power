@@ -7,6 +7,10 @@ export default {
         { id: 3, description: "Programação (Projetos pessoais)"},
         { id: 4, description: "Estudos (Inglês)"},
         { id: 5, description: "Estudos (História)"},
+        { id: 6, description: "Estudos (Typescript)"},
+        { id: 7, description: "Estudos (Ferramentas de desenvolvimento)"},
+        { id: 8, description: "Estudos (Maker)"},
+        { id: 9, description: "Leitura"},
     ],
     
     times: [],
