@@ -7,18 +7,70 @@
 
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="src/icons/pomoclock.svg" type="image/x-icon">
-    <link rel="manifest" href="./manifest.json">
+    <!-- <link rel="manifest" href="./manifest.json"> -->
 
     <title>powerful-pomodoro</title>
 
     <script>
-        if (typeof navigator.serviceWorker !== 'undefined') {
-            navigator.serviceWorker.register('pwabuider-sw.js')
+
+        // // 1. Carregar a IFrame Player API de forma assíncrona.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 2. Cria uma variável para armazenar o player do YouTube.
+        var player;
+
+        // 3. Inicializa o player após a API carregar.
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '315',
+                width: '560',
+                videoId: 'oXcce4M_VmY',
+                playerVars: {
+                    title: 0,
+                    controls: 0,        // Esconder os controles
+                    autoplay: 1,        // Iniciar automaticamente (opcional)
+                    mute: 1,            // Mutar o vídeo (opcional)
+                    rel: 0,              // Não mostrar vídeos relacionados ao final
+                    loop: 1,            // Repetir o vídeo
+                    playlist: 'oXcce4M_VmY', // Necessário para o loop funcionar
+                    modestbranding: 1,  // Reduzir a marca do YouTube
+                    showinfo: 0,
+                    cc_load_policy: 0,
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
         }
+
+        // 4. Função chamada quando o player está pronto.
+        function onPlayerReady(event) {
+            const playPauseButton = document.querySelector('[data-js="play"]');
+            // player.playVideo();
+            // player.mute();
+
+            playPauseButton.addEventListener('click', () => {
+                if(playPauseButton.innerText === "Play") {
+                    player.unMute();
+                } else {
+                    player.mute();
+                }
+            });
+        }
+
+
+        // if (typeof navigator.serviceWorker !== 'undefined') {
+        //     navigator.serviceWorker.register('pwabuider-sw.js')
+        // }
     </script>
 </head>
 
 <body>
+
+    <div id="player"></div>
 
     <div class="container">
         <select data-js="type"></select>
@@ -26,12 +78,12 @@
         <h1 data-js="display">00:00:00</h1>
 
     </div>
-    <iframe width="560" height="315" data-iframe="https://www.youtube.com/embed/oXcce4M_VmY?si=ZQCIvo9tKZWYfVwA"
+    <!-- <iframe width="560" height="315" data-iframe="https://www.youtube.com/embed/oXcce4M_VmY?si=ZQCIvo9tKZWYfVwA"
         src="https://www.youtube.com/embed/oXcce4M_VmY?si=ZQCIvo9tKZWYfVwA?autoplay=1" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
+    </iframe> -->
 </body>
 
 <script type="module" src="./js/index.js"></script>

@@ -11,9 +11,6 @@ export default {
         this.renderTimeTypes()
         this.setDataComingFromStorage()
         this.loadDisplay()
-
-        console.log(document.querySelector('video'));
-        
     },
     
     loadDisplay() {
