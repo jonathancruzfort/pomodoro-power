@@ -11,6 +11,7 @@ export default {
         { id: 7, description: "Estudos (Ferramentas de desenvolvimento)"},
         { id: 8, description: "Estudos (Maker)"},
         { id: 9, description: "Leitura"},
+        { id: 10, description: "Estudos (Concursos)"},
     ],
     
     times: [],
